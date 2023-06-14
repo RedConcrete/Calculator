@@ -12,8 +12,8 @@
     --color-Very-light-grayish-cyan: hsl(189, 41%, 97%);
     --white: hsl(0, 0%, 100%);
 }
-
-@media (max-width: 1439px) {
+/*
+@media (min-width: 375px) {
 
     .body {
         background-color: var(--color-Light-grayish-cyan);
@@ -25,7 +25,6 @@
         border-radius: 15px;
         overflow-x: hidden;
         margin: 0 auto;
-
     }
 
     .bill-div {
@@ -58,7 +57,6 @@
         top: 20px;
         left: 20px;
         z-index: 1;
-        /* Add any other desired styles here */
     }
 
     .container-button {
@@ -106,8 +104,6 @@
     }
 
     .btn-reset {
-        /* display: flex; */
-        /* flex-direction: column; */
         width: 300px;
         color: var(--button-color-dark-cyan);
         background-color: var(--button-activ-color-strong-cyan);
@@ -122,16 +118,16 @@
     }
     .amount-calced-tip {
         color: var(--button-activ-color-strong-cyan);
-        /* float: right; */
+        
         font-size: 30px;
         position: absolute;
         top: 82%;
-        left: 60%;
+        left: 55%;
     }
 
     .amount-calced-total {
         color: var(--button-activ-color-strong-cyan);
-        /* float: right; */
+        
         font-size: 30px;
         position: absolute;
         top:93%;
@@ -147,45 +143,57 @@
         padding-bottom: 20px;
     }
 }
-
-@media (min-width: 1440px) {
+*/
+/**/
+@media (max-width: 1440px) {
 
     .body {
         background-color: var(--color-Light-grayish-cyan);
     }
 
     .main-container {
-        padding: 5%;
+        display: flex;
+        flex-direction: row;
+        border-radius: 15px;
         background-color: var(--white);
-        border-radius: 5px;
     }
 
     .bill-div {
-        display: flex;
-        flex-direction: column;
     }
 
-    .tip-div {
+    .button-div{
+    }
+
+    .people-div{
+    }
+
+    .tip-n-div {
         background-color: var(--button-color-dark-cyan);
         border-radius: 20px;
         padding-top: 5%;
         padding-bottom: 5%;
     }
 
-    .tip-div-top {
-        padding-bottom: 10%;
+    .tip-left{
+        background-color: burlywood;
+        
+    }
+
+    .tip-right{
+        background-color: red;
+        
+    }
+    
+    .svg {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+        
     }
 
     .textarea-with-svg {
         position: relative;
-    }
-
-    .svg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        /* Add any other desired styles here */
     }
 
     .container-button {
@@ -198,6 +206,11 @@
         color: var(--color-dark-grayish-cyan);
     }
 
+    .tip-total-text {
+        color: var(--white);
+        padding-left: 20px;
+    }
+
     .textarea {
         font-size: 25px;
         color: var(--button-color-dark-cyan);
@@ -207,6 +220,8 @@
         padding-top: 2%;
         padding-bottom: 2%;
         border-radius: 2px;
+        overflow: hidden;
+        text-align: right;
     }
 
     .btn {
@@ -221,22 +236,41 @@
     }
 
     .btn-custom {
-        color: var(--color-dark-grayish-cyan);
+        color: var(--button-color-dark-cyan);
         background-color: var(--color-Very-light-grayish-cyan);
     }
 
+    .btn-reset {
+        margin-top: 200px;
+        width: 300px;
+        color: var(--button-color-dark-cyan);
+        background-color: var(--button-activ-color-strong-cyan);
+    }
+
     .topText {
-        font-size: 35px;
+        font-size: 45px;
         padding-left: 40%;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
         color: var(--button-color-dark-cyan);
     }
-
-    .amount-calced {
+    .amount-calced-tip {
         color: var(--button-activ-color-strong-cyan);
-
+        
     }
 
+    .amount-calced-total {
+        color: var(--button-activ-color-strong-cyan);
+        
+    }
+
+    .btn-activ {
+        background-color: var(--button-activ-color-strong-cyan);
+    }
+
+    .person-text{
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
 }
+/**/
