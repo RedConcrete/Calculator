@@ -1,0 +1,242 @@
+* {
+    font-family: 'Space Mono', monospace;
+}
+
+:root {
+    --button-activ-color-strong-cyan: hsl(172, 67%, 45%);
+
+    --button-color-dark-cyan: hsl(183, 100%, 15%);
+    --color-dark-grayish-cyan: hsl(186, 14%, 43%);
+    --text-color-Grayish-cyan: hsl(184, 14%, 56%);
+    --color-Light-grayish-cyan: hsl(185, 41%, 84%);
+    --color-Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 1439px) {
+
+    .body {
+        background-color: var(--color-Light-grayish-cyan);
+    }
+
+    .main-container {
+        padding: 5%;
+        background-color: var(--white);
+        border-radius: 15px;
+        overflow-x: hidden;
+        margin: 0 auto;
+
+    }
+
+    .bill-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tip-n-div {
+        background-color: var(--button-color-dark-cyan);
+        border-radius: 20px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .tip-n-amount-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tip-div-top {
+        padding-bottom: 2%;
+    }
+
+    .textarea-with-svg {
+        position: relative;
+    }
+
+    .svg {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+        /* Add any other desired styles here */
+    }
+
+    .container-button {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+    }
+
+    .text {
+        color: var(--color-dark-grayish-cyan);
+    }
+
+    .tip-total-text {
+        color: var(--white);
+        padding-left: 20px;
+    }
+
+    .textarea {
+        font-size: 25px;
+        color: var(--button-color-dark-cyan);
+        border-color: var(--white);
+        background-color: var(--color-Very-light-grayish-cyan);
+
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-radius: 2px;
+        overflow: hidden;
+        text-align: right;
+    }
+
+    .btn {
+        font-size: 20px;
+        width: 135px;
+        height: 50px;
+        margin: 10px;
+        background-color: var(--button-color-dark-cyan);
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn-custom {
+        color: var(--button-color-dark-cyan);
+        background-color: var(--color-Very-light-grayish-cyan);
+    }
+
+    .btn-reset {
+        /* display: flex; */
+        /* flex-direction: column; */
+        width: 300px;
+        color: var(--button-color-dark-cyan);
+        background-color: var(--button-activ-color-strong-cyan);
+    }
+
+    .topText {
+        font-size: 35px;
+        padding-left: 40%;
+        display: flex;
+        flex-direction: row;
+        color: var(--button-color-dark-cyan);
+    }
+    .amount-calced-tip {
+        color: var(--button-activ-color-strong-cyan);
+        /* float: right; */
+        font-size: 30px;
+        position: absolute;
+        top: 82%;
+        left: 60%;
+    }
+
+    .amount-calced-total {
+        color: var(--button-activ-color-strong-cyan);
+        /* float: right; */
+        font-size: 30px;
+        position: absolute;
+        top:93%;
+        left: 55%;
+    }
+
+    .btn-activ {
+        background-color: var(--button-activ-color-strong-cyan);
+    }
+
+    .person-text{
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .body {
+        background-color: var(--color-Light-grayish-cyan);
+    }
+
+    .main-container {
+        padding: 5%;
+        background-color: var(--white);
+        border-radius: 5px;
+    }
+
+    .bill-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tip-div {
+        background-color: var(--button-color-dark-cyan);
+        border-radius: 20px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .tip-div-top {
+        padding-bottom: 10%;
+    }
+
+    .textarea-with-svg {
+        position: relative;
+    }
+
+    .svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        /* Add any other desired styles here */
+    }
+
+    .container-button {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+    }
+
+    .text {
+        color: var(--color-dark-grayish-cyan);
+    }
+
+    .textarea {
+        font-size: 25px;
+        color: var(--button-color-dark-cyan);
+        border-color: var(--white);
+        background-color: var(--color-Very-light-grayish-cyan);
+
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-radius: 2px;
+    }
+
+    .btn {
+        font-size: 20px;
+        width: 135px;
+        height: 50px;
+        margin: 10px;
+        background-color: var(--button-color-dark-cyan);
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn-custom {
+        color: var(--color-dark-grayish-cyan);
+        background-color: var(--color-Very-light-grayish-cyan);
+    }
+
+    .topText {
+        font-size: 35px;
+        padding-left: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--button-color-dark-cyan);
+    }
+
+    .amount-calced {
+        color: var(--button-activ-color-strong-cyan);
+
+    }
+
+}
