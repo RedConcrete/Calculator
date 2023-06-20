@@ -12,19 +12,19 @@
     --color-Very-light-grayish-cyan: hsl(189, 41%, 97%);
     --white: hsl(0, 0%, 100%);
 }
-/*
-@media (min-width: 375px) {
+/**/
+/* MOBILE */
+@media only screen and (max-width: 400px) {
 
     .body {
         background-color: var(--color-Light-grayish-cyan);
     }
 
     .main-container {
-        padding: 5%;
-        background-color: var(--white);
+        flex-direction: row;
         border-radius: 15px;
-        overflow-x: hidden;
-        margin: 0 auto;
+        background-color: var(--white);
+        padding: 5%;
     }
 
     .bill-div {
@@ -32,7 +32,7 @@
         flex-direction: column;
     }
 
-    .tip-n-div {
+    .main-container-amount {
         background-color: var(--button-color-dark-cyan);
         border-radius: 20px;
         padding-top: 5%;
@@ -54,15 +54,15 @@
 
     .svg {
         position: absolute;
-        top: 20px;
+        top: 10px;
         left: 20px;
         z-index: 1;
     }
 
     .container-button {
+        width: 325px;
         display: flex;
         flex-wrap: wrap;
-        width: 400px;
     }
 
     .text {
@@ -77,14 +77,11 @@
     .textarea {
         font-size: 25px;
         color: var(--button-color-dark-cyan);
-        border-color: var(--white);
         background-color: var(--color-Very-light-grayish-cyan);
-
-        padding-top: 2%;
-        padding-bottom: 2%;
-        border-radius: 2px;
-        overflow: hidden;
-        text-align: right;
+        /* padding-bottom: 15px; */
+        border-radius: 5px;
+        border: none;
+        text-align: end;
     }
 
     .btn {
@@ -111,27 +108,16 @@
 
     .topText {
         font-size: 35px;
-        padding-left: 40%;
         display: flex;
-        flex-direction: row;
         color: var(--button-color-dark-cyan);
-    }
-    .amount-calced-tip {
-        color: var(--button-activ-color-strong-cyan);
-        
-        font-size: 30px;
-        position: absolute;
-        top: 82%;
-        left: 55%;
+        justify-content: center;
     }
 
-    .amount-calced-total {
-        color: var(--button-activ-color-strong-cyan);
-        
-        font-size: 30px;
-        position: absolute;
-        top:93%;
-        left: 55%;
+    .btn-reset-div {
+        padding-right: 5%;
+        width: 260px;
+        color: var(--button-color-dark-cyan);
+        background-color: var(--button-activ-color-strong-cyan);
     }
 
     .btn-activ {
@@ -142,13 +128,62 @@
         padding-left: 20px;
         padding-bottom: 20px;
     }
+    .tip-amount-div{
+        display: flex;
+    }
+
+    .total-amount-div{
+        display: flex;
+    }
+
+    .tip-total-text-div{
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .tip-total {
+        padding-left: 50%;
+        padding-bottom: 50px;
+        font-size: 20px;
+    }
+
+    .right-divs {
+        background-color: var(--button-color-dark-cyan);
+        border-radius: 20px;
+        padding: 5%;
+        margin-top: 20px;
+    }
+
+    .left-divs{
+        padding-right: 50px;
+    }
+
+    .amount-calced-total-tip {
+        color: var(--button-activ-color-strong-cyan);
+    }
+
+    .custom-TextField{
+        text-align: right;
+    }
+
+
+    .error {
+        display: none;
+        color: red;
+        margin-left: 18px;
+    }
 }
-*/
 /**/
-@media (max-width: 1440px) {
+/**/
+/* DESKTOP */
+@media only screen and (min-width: 400px) {
 
     .body {
         background-color: var(--color-Light-grayish-cyan);
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .main-container {
@@ -156,40 +191,15 @@
         flex-direction: row;
         border-radius: 15px;
         background-color: var(--white);
-    }
-
-    .bill-div {
-    }
-
-    .button-div{
-    }
-
-    .people-div{
-    }
-
-    .tip-n-div {
-        background-color: var(--button-color-dark-cyan);
-        border-radius: 20px;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-
-    .tip-left{
-        background-color: burlywood;
-        
-    }
-
-    .tip-right{
-        background-color: red;
-        
+        padding: 5%;
+        width: 945px;
     }
     
     .svg {
         position: absolute;
-        top: 20px;
+        top: 10px;
         left: 20px;
         z-index: 1;
-        
     }
 
     .textarea-with-svg {
@@ -199,29 +209,20 @@
     .container-button {
         display: flex;
         flex-wrap: wrap;
-        width: 400px;
     }
 
     .text {
         color: var(--color-dark-grayish-cyan);
     }
 
-    .tip-total-text {
-        color: var(--white);
-        padding-left: 20px;
-    }
-
     .textarea {
         font-size: 25px;
         color: var(--button-color-dark-cyan);
-        border-color: var(--white);
         background-color: var(--color-Very-light-grayish-cyan);
-
-        padding-top: 2%;
-        padding-bottom: 2%;
-        border-radius: 2px;
-        overflow: hidden;
-        text-align: right;
+        border-radius: 5px;
+        border: none;
+        width: 470px;
+        text-align: end;
     }
 
     .btn {
@@ -240,8 +241,7 @@
         background-color: var(--color-Very-light-grayish-cyan);
     }
 
-    .btn-reset {
-        margin-top: 200px;
+    .btn-reset-div {
         width: 300px;
         color: var(--button-color-dark-cyan);
         background-color: var(--button-activ-color-strong-cyan);
@@ -249,15 +249,9 @@
 
     .topText {
         font-size: 45px;
-        padding-left: 40%;
-        display: flex;
-        flex-direction: row;
         color: var(--button-color-dark-cyan);
     }
-    .amount-calced-tip {
-        color: var(--button-activ-color-strong-cyan);
-        
-    }
+    
 
     .amount-calced-total {
         color: var(--button-activ-color-strong-cyan);
@@ -272,5 +266,58 @@
         padding-left: 20px;
         padding-bottom: 20px;
     }
+
+    .tip-amount-div{
+        display: flex;
+    }
+
+    .total-amount-div{
+        display: flex;
+    }
+
+    .tip-total-text-div{
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .tip-total {
+        padding-left: 50%;
+        padding-bottom: 50px;
+        font-size: 25px;
+    }
+
+    .right-divs{
+        background-color: var(--button-color-dark-cyan);
+        border-radius: 20px;
+        padding: 5%;
+    }
+
+    .left-divs{
+        padding-right: 50px;
+    }
+
+    .amount-calced-total-tip {
+        color: var(--button-activ-color-strong-cyan);
+    }
+
+    .custom-TextField{
+        text-align: right;
+    }
+    
+    .error {
+        display: none;
+        color: red;
+        margin-left: 200px;
+    }
+    
 }
-/**/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+/*
