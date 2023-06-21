@@ -15,75 +15,80 @@
 /**/
 /* MOBILE */
 @media only screen and (max-width: 400px) {
-
+/* MOBILE */
     .body {
         background-color: var(--color-Light-grayish-cyan);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
-    .main-container {
-        flex-direction: row;
-        border-radius: 15px;
-        background-color: var(--white);
-        padding: 5%;
-    }
-
+    
+/* MOBILE */
+.main-container {
+    /* flex-direction: row; */
+    border-radius: 25px;
+    background-color: var(--white);
+    padding: 5%;
+    min-width: 100%;
+}
+/* MOBILE */
     .bill-div {
         display: flex;
         flex-direction: column;
     }
-
+/* MOBILE */
     .main-container-amount {
         background-color: var(--button-color-dark-cyan);
         border-radius: 20px;
         padding-top: 5%;
         padding-bottom: 5%;
     }
-
+/* MOBILE */
     .tip-n-amount-div {
         display: flex;
         flex-direction: column;
     }
-
+/* MOBILE */
     .tip-div-top {
         padding-bottom: 2%;
     }
-
+/* MOBILE */
     .textarea-with-svg {
         position: relative;
     }
-
+/* MOBILE */
     .svg {
         position: absolute;
         top: 10px;
         left: 20px;
         z-index: 1;
     }
-
-    .container-button {
-        width: 325px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
+/* MOBILE */
+.container-button {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* MOBILE */
     .text {
         color: var(--color-dark-grayish-cyan);
     }
-
+/* MOBILE */
     .tip-total-text {
         color: var(--white);
         padding-left: 20px;
     }
-
+/* MOBILE */
     .textarea {
         font-size: 25px;
         color: var(--button-color-dark-cyan);
         background-color: var(--color-Very-light-grayish-cyan);
-        /* padding-bottom: 15px; */
         border-radius: 5px;
         border: none;
         text-align: end;
+        width: 99%;
     }
-
+/* MOBILE */
     .btn {
         font-size: 20px;
         width: 135px;
@@ -94,18 +99,18 @@
         border: none;
         border-radius: 5px;
     }
-
+/* MOBILE */
     .btn-custom {
         color: var(--button-color-dark-cyan);
         background-color: var(--color-Very-light-grayish-cyan);
     }
-
+/* MOBILE */
     .btn-reset {
         width: 300px;
         color: var(--button-color-dark-cyan);
         background-color: var(--button-activ-color-strong-cyan);
     }
-
+/* MOBILE */
     .topText {
         font-size: 35px;
         display: flex;
@@ -113,65 +118,100 @@
         justify-content: center;
     }
 
-    .btn-reset-div {
-        padding-right: 5%;
-        width: 260px;
-        color: var(--button-color-dark-cyan);
-        background-color: var(--button-activ-color-strong-cyan);
+    .button-div{
+        width: 325px;
     }
 
+    
+/* MOBILE */
+.btn-reset-div {
+    width: 100%;
+    /* padding-right: 10px; */
+    color: var(--button-color-dark-cyan);
+    background-color: var(--button-activ-color-strong-cyan);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.btn-div{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 120%;
+    flex-direction: column;
+
+}
+
+/* MOBILE */
+.reset-btn-div{
+    display: flex;
+}
+
+/* MOBILE */
     .btn-activ {
         background-color: var(--button-activ-color-strong-cyan);
     }
-
+/* MOBILE */
     .person-text{
         padding-left: 20px;
         padding-bottom: 20px;
     }
+/* MOBILE */   
     .tip-amount-div{
         display: flex;
     }
-
+/* MOBILE */
     .total-amount-div{
         display: flex;
     }
-
+/* MOBILE */
     .tip-total-text-div{
         display: flex;
         flex-direction: column;
         color: white;
     }
+/* MOBILE */  
     .tip-total {
         padding-left: 50%;
         padding-bottom: 50px;
         font-size: 20px;
     }
-
-    .right-divs {
-        background-color: var(--button-color-dark-cyan);
-        border-radius: 20px;
-        padding: 5%;
-        margin-top: 20px;
-    }
-
+/* MOBILE */
+.right-divs {
+    background-color: var(--button-color-dark-cyan);
+    border-radius: 20px;
+    padding: 5%;
+    margin-top: 20px;
+    min-width: 90%;
+}
+/* MOBILE */
     .left-divs{
         padding-right: 50px;
     }
-
+/* MOBILE */
     .amount-calced-total-tip {
         color: var(--button-activ-color-strong-cyan);
     }
-
+/* MOBILE */
     .custom-TextField{
         text-align: right;
     }
-
-
+/* MOBILE */
     .error {
         display: none;
         color: red;
         margin-left: 18px;
     }
+/* MOBILE */
+    .people-div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-width: 100%;
+        max-width: 320px;
+    }
+
 }
 /**/
 /**/
